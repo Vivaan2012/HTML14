@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Rainbow Text</title>
+
+    <style>
+        .rainbow-text {
+    
+            font-size: 60px;
+    
+            font-weight: bold;
+    
+            background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    
+            background-size: 400%;
+    
+            /* Make it bigger for smoother animation */
+    
+            -webkit-background-clip: text;
+    
+            -webkit-text-fill-color: transparent;
+    
+            display: inline-block;
+    
+            animation: rainbowMove 5s linear infinite;
+    
+        }
+    
+        @keyframes rainbowMove {
+    
+            0% {
+    
+                background-position: 0% 50%;
+    
+            }
+    
+            100% {
+    
+                background-position: 100% 50%;
+    
+            }
+    
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="rainbow-text">Rainbow Text</div>
+
+</body>
+
+</html>
