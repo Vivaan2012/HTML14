@@ -1,58 +1,40 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <title>Rainbow Text</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
     <style>
         .rainbow-text {
-    
             font-size: 80px;
-    
             font-weight: bold;
-    
             background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
-    
             background-size: 400%;
-    
-            
-    
             -webkit-background-clip: text;
-    
             -webkit-text-fill-color: transparent;
-    
             display: inline-block;
-    
             animation: rainbowMove 5s linear infinite;
-    
         }
-    
         @keyframes rainbowMove {
-    
             0% {
-    
                 background-position: 0% 50%;
-    
             }
-    
             100% {
-    
                 background-position: 100% 50%;
-    
             }
-    
         }
     </style>
 </head>
-
 <body>
+    <div class="rainbow-text">Cricket</div>
 
-    <div class="rainbow-text">Rainbow Text</div>
-
+    <div class="container">
+         is a bat-and-ball game played between two teams of <mark>eleven players</mark> on a field at
+        the centre of which is a
+        <pre>22-yard pitch</pre> with a wicket at each end, each comprising two bails balanced
+        on<code> three stumps</code>. The batting side scores runs by striking the ball bowled at the wicket with the
+        bat, while the <abbr> bowling and fielding</abbr> side tries to prevent this and<blockquote>
+            dismiss</blockquote> each batter.
+    </div>
 </body>
-
 </html>
